@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Searches
+comment1.params=numbers\ key
+comment1.target=int\ linearSearch(int[],\ int)
+comment2.params=numbers\ key
+comment2.target=int\ binarySearch(int[],\ int)
+comment3.params=obj\ key
+comment3.target=int\ linearSearch(java.lang.Comparable[],\ java.lang.Comparable)
+comment4.params=obj\ key
+comment4.target=int\ binarySearch(java.lang.Comparable[],\ java.lang.Comparable)
+numComments=5

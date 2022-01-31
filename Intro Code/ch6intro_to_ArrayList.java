@@ -21,7 +21,7 @@ public class ch6intro_to_ArrayList
 public static void main (String[] args)
 {
 	//ArrayList notes
-/*
+
 	// <> indicates the type of ArrayList
 	ArrayList <String> farm = new ArrayList<>();
 
@@ -68,9 +68,9 @@ public static void main (String[] args)
 	//for(int i = 0; i<3; i++)
 	//{
 
-	mycds.add(new CD("Wilco","Jeff Tweety",12.99,16);
-	mycds.add(new CD("Throwup","Britiny Spears",12.99,16);
-	mycds.add(new CD("Oxygen","CatFish and the Bottlemen",12.99,16);
+	mycds.add(new CD("Wilco","Jeff Tweety",12.99,16));
+	mycds.add(new CD("Throwup","Britiny Spears",12.99,16));
+	mycds.add(new CD("Oxygen","CatFish and the Bottlemen",12.99,16));
 
 	System.out.print(mycds);
 
