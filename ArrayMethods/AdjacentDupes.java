@@ -2,11 +2,20 @@ public class AdjacentDupes
 {
    public boolean adjacentDupes(int[] arr)
    {
-      // Assume no adjacent dupes.
-      boolean adjDupes = false;
-
-      // Loop through array, checking for duplicates
-      // next to each other.
+      
+      boolean adjdupe = false;
+     
+      for(int i = 1; i<arr.length;i++)
+      {
+          if (arr[i]==arr[i-1])
+            {
+                adjdupe = true;
+                break;
+            }
+          
+        }
+      
+      return adjdupe;
 
    }
 

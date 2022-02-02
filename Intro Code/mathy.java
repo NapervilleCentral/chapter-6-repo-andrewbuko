@@ -60,7 +60,16 @@ public class mathy
     */
 
     public  void getOdd ( int[] num1, int odd [])
-    {   int j = 0;
+    {   
+        for (int i = 0; i<num1.length;i++)
+        {
+            if(num1[i] % 2 == 1)
+                odd[i] = num1[i];
+            else
+                odd[i] = 10001;
+        
+        }
+       
 
 
         
@@ -79,19 +88,21 @@ public class mathy
     */
 
 
-    public int [] getEven(int[] num)
+    public int [] getEvens(int[] num)
     {
         int [] evens = new int[num.length];
-        
-        for (int x : num)
+        for (int i = 0; i<num.length;i++)
         {
-            if(x%0!=2)
-                even++;
+            if(num[i] % 2 == 0)
+                evens[i] = num[i];
+            else
+                evens[i] = 10001;
+        
         }
-        return even;
+        return evens;
     }//end of getEven
 
-
+    
 
 
 

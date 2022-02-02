@@ -4,7 +4,9 @@ public class SwapFirstLast
 {
    public void swapFirstLast(int[] arr)
    {
-
+       int x = arr[0];
+       arr[0] = arr[arr.length-1];
+       arr[arr.length-1] = x;
    }
 
    public static void main(String[] args)

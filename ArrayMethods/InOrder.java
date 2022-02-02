@@ -4,7 +4,19 @@ public class InOrder
    {
       // Assume they are in order.
       boolean ordered = true;
-
+      int prev = arr[0];
+      for(int x : arr)
+      {
+          if (x<prev)
+            {
+                ordered = false;
+                break;
+            }
+          else
+            prev = x;
+        }
+      
+      return ordered;
    }
 
    public static void main(String[] args)

@@ -43,6 +43,20 @@ public class ch6intro_to_array
                System.out.print(s+" ");
            System.out.println("number of odd values "+odd(nums)); 
            
+           evennums = useful.getEvens(nums);
+           for(int s : evennums){
+           if(s != 10001) 
+           System.out.print(s+" ");}
+           
+           
+            int [] nums2 = {-3,5,1,4,66,33,-27,38,88,73};
+           
+           int [] odd = new int[nums2.length]; 
+           oddnums = useful.getOdd(nums2,odd);
+           for(int s : oddnums){
+           if(s != 10001) 
+           System.out.print(s+" ");}
+            
     /*
     
             System.out.println(Searches.linearSearch(num,look)  );

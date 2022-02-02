@@ -6,12 +6,23 @@ public class GetSecondLargest
    {
       // One way to do it: Find maximum once.
       int max = arr[0];
-
+      for(int i=1; i<arr.length;i++)
+      {
+          if (arr[i] > max)
+            max = arr[i];
+      }    
+      
       // 2. Find the max again, ignoring the real max.
       int oldMax = max;
       max = arr[0];
 
+      for(int i=1; i<arr.length;i++)
+      {
+          if (arr[i] > max && arr[i] != oldMax)
+            max = arr[i];
+      }  
 
+      return max;
    }
 
    public static void main(String[] args)

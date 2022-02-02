@@ -2,9 +2,16 @@ public class ContainsDuplicates
 {
    public boolean containsDuplicates(int[] arr)
    {
-      // Assume no dupes.
-      boolean dupes = false;
-
+      for (int i = 0; i < arr.length; i++)
+        for (int x = 0 ; x < i; x++)
+         {
+             if (arr[x] == arr[i])
+               { return true; 
+                   
+                   }
+                
+         }
+         return false;
 
    }
 
