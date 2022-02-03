@@ -4,8 +4,14 @@ public class ReplaceWithLargestNeighbor
 {
    public void replaceWithLargestNeighbor(int[] arr)
    {
-      // Start loop at one, and stop before the end
-
+      for(int i = 1; i<arr.length-1; i++)
+      {
+          if(arr[i-1]>arr[i+1])
+            arr[i] = arr[i-1];
+          else
+            arr[i] = arr[i+1];
+        }
+      arr[arr.length-1] = arr[arr.length-2];
    }
 
    public static void main(String[] args)
