@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=nim
+comment0.text=\r\n\ Andrew\ Bukowski\r\n\ 2/10/22\r\n\ Nim\r\n\ Simulating\ the\ game\ of\ nim\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=x
+comment2.target=void\ display(int[])
+numComments=3
