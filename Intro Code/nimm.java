@@ -11,8 +11,9 @@ public class nimm
     {
         Scanner scan = new Scanner(System.in);
         int[] nim = {3,5,8};
-        boolean done = false; boolean p1take = false; boolean p2take = false;
-        while(!done)
+        boolean p1take = false; boolean p2take = false;
+        int winner = 0;
+        while (winner == 0)
         {
             while(!p1take)
             {
@@ -27,8 +28,13 @@ public class nimm
               {
                 nim[x1 - 1] = nim[x1-1] - y1;
                 p1take = true;
-              }    
+              }
             }  
+            if(nim[0] == 0 && nim[1] == 0 && nim[2] == 0)
+            {
+                p2take = true;
+                winner = 1;
+            }    
             while(!p2take)
             {
               nimm.display(nim);
@@ -45,7 +51,9 @@ public class nimm
               }    
             } 
             p1take = false;
-            p2take = false;   
+            p2take = false;
+            if(winner == 0 && nim[0] == 0 && nim[1] == 0 && nim[2] == 0)
+                winner = 2;
         }
     }    
     public static void display(int[] x)

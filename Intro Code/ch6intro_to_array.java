@@ -21,7 +21,7 @@ public class ch6intro_to_array
     public static void main (String[] args)
     {
     
-    /**/
+    /*
             mathy useful = new mathy();
             int x = 50;
             int[] nums = new int[20];
@@ -50,7 +50,7 @@ public class ch6intro_to_array
            
            
             int [] nums2 = {-3,5,1,4,66,33,-27,38,88,73};
-           
+           /*
            int [] odd = new int[nums2.length]; 
            oddnums = useful.getOdd(nums2,odd);
            for(int s : oddnums){
@@ -115,22 +115,33 @@ public class ch6intro_to_array
     
         // make a 2d array with an iniitalizer list.
         //print the length of row and col
-    /*
+    /**/
         int [][] scores = { {1,2,3},//6
                             {2,2,3},//7
                             {3,2,3},//8
                             {4,2,3}    };//9
     
+        System.out.println(scores[2][1]);
         //how many columns
         System.out.println(scores[0].length+"col");
         //how many rows
         System.out.println(scores.length+"row");
+        
+        mathy.print2D(scores);
     
+        int arraySum = 0;
+        
+        for(int r = 0; r<scores.length;r++)
+            for(int c = 0; c<scores[0].length;c++)
+                arraySum+=scores[r][c];
         //sum entire 2D array
-        System.out.print("The sum of this array is" );
-    
+        System.out.print("The sum of this array is"+arraySum );
+        
+        int lastsum = 0;
+        for(int r = 0; r<scores[scores.length-1].length;r++)
+                lastsum+=scores[r][scores.length-1];
         //sum a row of 2D array
-        System.out.print("The sum of row "));
+        System.out.print("The sum of row "+lastsum);
     
     
     

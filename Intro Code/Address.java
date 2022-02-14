@@ -25,44 +25,47 @@ public class Address implements Comparable
 
    public int compareTo(Object other)
    {
-	   Address obj = (Address) other;
+       Address obj = (Address) other;
 
 
 
 
 
-	   return 0;
+       return 0;
 
    }
 
- 	/**
- 		creates a hash number
- 		array size must be size of hash table
-	*/
+    /**
+        creates a hash number
+        array size must be size of hash table
+    */
       public int hash ( )
 
       {
-		  int hash_num = 0;
+          int hash_num = 0;
 
-		  for (int i = 0; i<streetAddress.length(); i++)
-		  {
-			  hash_num += streetAddress.charAt(i);
+            for (int i = 0; i<streetAddress.length(); i++)
+          {
+              hash_num += streetAddress.charAt(i);
 
-		  }
+          }
+          
+         
+                 hash_num += state.charAt(0);
+	hash_num += zipCode;
+        int factor = 31; // use a prime number to generate a better hash  
 
-		  int factor = 0;
-
-		  for (int i = 0; i<city.length(); i++)
-				factor +=city.charAt(i);
-
-		hash_num *= factor;
+          for (int i = 0; i<city.length(); i++)
+                hash_num +=city.charAt(i);
+                
+        hash_num *= factor;
 
 
 
 
 
 
-		return hash_num;
+        return hash_num;
       }
 
 

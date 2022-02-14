@@ -23,6 +23,15 @@ public class mathy
 
     }
     
+    public static void print2D(int [][] table)
+    {
+        for(int r= 0; r<table.length; r++){
+            for(int c = 0; c<table[0].length; c++)
+                System.out.print(table[r][c]+"\t");
+            System.out.println();    
+            }
+    }    
+    
     /**
      * Creates and populates an array with random values
      * @param size - the number of random values 
