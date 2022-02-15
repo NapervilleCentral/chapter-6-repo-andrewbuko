@@ -33,7 +33,7 @@ public class nimm
             if(nim[0] == 0 && nim[1] == 0 && nim[2] == 0)
             {
                 p2take = true;
-                winner = 1;
+                winner = 2;
             }    
             while(!p2take)
             {
@@ -53,8 +53,9 @@ public class nimm
             p1take = false;
             p2take = false;
             if(winner == 0 && nim[0] == 0 && nim[1] == 0 && nim[2] == 0)
-                winner = 2;
+                winner = 1;
         }
+        System.out.println("The winner is player "+winner);
     }    
     public static void display(int[] x)
     {
