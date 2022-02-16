@@ -8,36 +8,11 @@ import java.util.Random;
 
 public class Coin
 {
-   private final int HEADS = 0;
-   private final int TAILS = 1;
-
-   private int face;
-   private double amount;
-   private char type;
-
-   /**-----------------------------------------------------------------
-   *  Sets up the coin by flipping it initially.
-   */
-   public Coin ()
+   private double val = 0;
+   private String name;
+   public Coin (String nam, double v)
    {
-      flip();
-   }
-
-   /**-----------------------------------------------------------------
-   *  Flips the coin by randomly choosing a face value.
-   */
-   public void flip ()
-   {
-      face = (int) (Math.random() * 2);
-   }
-
-   /**-----------------------------------------------------------------
-   *  Returns true if the current face of the coin is heads.
-   		@return boolean, true if heads
-   */
-   public boolean isHeads ()
-   {
-      return (face == HEADS);
+      name = nam;
    }
 
    /**-----------------------------------------------------------------
@@ -46,12 +21,6 @@ public class Coin
    */
    public String toString()
    {
-      String faceName;
-      if (face == HEADS)
-         faceName = "Heads";
-      else
-         faceName = "Tails";
-
-      return faceName;
+     return "sugma";
    }
 }
