@@ -2,4 +2,10 @@
 comment0.target=MagicSquare
 comment1.params=array
 comment1.target=MagicSquare(int[][])
-numComments=2
+comment2.params=array
+comment2.target=void\ setMagicSquare(int[][])
+comment3.params=
+comment3.target=boolean\ isMagic()
+comment4.params=
+comment4.target=int\ getMagicNum()
+numComments=5
