@@ -26,8 +26,6 @@ public class Purse
     public void add (Coin acoin)
     {
         
-
-
     }
 
   /** Returns the total value of the coins in the array
@@ -37,7 +35,7 @@ public class Purse
     public double getTotal()
     {
         double total = 0;
-        for(x : 
+        for(x : )
 
 	}
 

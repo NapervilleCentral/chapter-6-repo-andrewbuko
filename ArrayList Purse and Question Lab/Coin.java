@@ -21,6 +21,6 @@ public class Coin
    */
    public String toString()
    {
-     return "sugma";
+     return "hi";
    }
 }
