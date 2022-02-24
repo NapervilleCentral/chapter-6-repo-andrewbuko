@@ -4,7 +4,6 @@
 *  Represents a coin with two sides that can be flipped.
 */
 
-import java.util.Random;
 
 public class Coin
 {
@@ -13,6 +12,7 @@ public class Coin
    public Coin (String nam, double v)
    {
       name = nam;
+      val = v;
    }
 
    /**-----------------------------------------------------------------
@@ -21,6 +21,6 @@ public class Coin
    */
    public String toString()
    {
-     return "hi";
+     return "arthur is fat";
    }
 }

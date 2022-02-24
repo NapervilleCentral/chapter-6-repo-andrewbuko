@@ -3,14 +3,10 @@ import java.util.ArrayList;
 
 public class Purse
 {
-    private Coin penny = new Coin("penny", 0.01);
-    private Coin nickel = new Coin("nickel", 0.05);
-    private Coin dime = new Coin("dime", 0.10);
-    private Coin quarter = new Coin("quarter", 0.25);
-    private ArrayList <Coin> pocket = new ArrayList<Coin>();
+    private ArrayList <Coin> change = new ArrayList();
 
 
-    public Purse (double val)
+    public Purse ()
     { 
         
     }
@@ -25,7 +21,7 @@ public class Purse
   */
     public void add (Coin acoin)
     {
-        
+        change.add(acoin);
     }
 
   /** Returns the total value of the coins in the array
@@ -35,10 +31,33 @@ public class Purse
     public double getTotal()
     {
         double total = 0;
-        for(x : )
+        for(Coin x : change)
+        {
+            
+        }    
 
-	}
-
+    }
+    
+    public int getNumberofPennies()
+    {
+        
+    }    
+    
+    public int getNumberofNickels()
+    {
+        
+    }  
+    
+    public int getNumberofDimes()
+    {
+        
+    }  
+    
+    public int getNumberof()
+    {
+        
+    }  
+    
 
 
  /**
