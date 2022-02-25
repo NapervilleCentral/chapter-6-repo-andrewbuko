@@ -21,6 +21,8 @@ public class Purse
   */
     public void add (Coin acoin)
     {
+        if (change.
+        
         change.add(acoin);
     }
 
@@ -38,24 +40,52 @@ public class Purse
         return total;
     }
     
-    public int getNumberofPennies()
+    public double getNumberofPennies()
     {
-        for(Coin x : 
+        double total = 0;
+        for (Coin x : change)
+        {
+            if(x.getName().equals("Penny"))
+                total+=x.getValue();
+                
+        }    
+        return total;
     }    
     
-    public int getNumberofNickels()
+    public double getNumberofNickels()
     {
-        
+        double total = 0;
+        for (Coin x : change)
+        {
+            if(x.getName().equals("Nickel"))
+                total+=x.getValue();
+                
+        }    
+        return total;
     }  
     
-    public int getNumberofDimes()
+    public double getNumberofDimes()
     {
-        
+        double total = 0;
+        for (Coin x : change)
+        {
+            if(x.getName().equals("Dime"))
+                total+=x.getValue();
+                
+        }    
+        return total;
     }  
     
-    public int getNumberof()
+    public double getNumberofQuarters()
     {
-        
+        double total = 0;
+        for (Coin x : change)
+        {
+            if(x.getName().equals("Quarter"))
+                total+=x.getValue();
+                
+        }    
+        return total;
     }  
     
 
@@ -66,7 +96,7 @@ public class Purse
 
    public String toString()
    {
-      return " --";
+      ;
    }
 
 }
