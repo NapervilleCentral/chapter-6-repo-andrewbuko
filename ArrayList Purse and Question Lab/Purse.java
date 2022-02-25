@@ -33,14 +33,14 @@ public class Purse
         double total = 0;
         for(Coin x : change)
         {
-            
+            total+=x.getValue();
         }    
-
+        return total;
     }
     
     public int getNumberofPennies()
     {
-        
+        for(Coin x : 
     }    
     
     public int getNumberofNickels()

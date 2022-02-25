@@ -15,12 +15,23 @@ public class Coin
       val = v;
    }
 
+   public String getName()
+   {
+       return name;
+   }
+   public double getValue()
+   {
+       return val;
+   }
    /**-----------------------------------------------------------------
-   *  Returns the current face of the coin as a string.
-   		@return String
+   *  Returns the name and value of the coin
+           @return String
    */
    public String toString()
    {
-     return "arthur is fat";
+     String x = "";
+     x+="Name: "+name;
+     x+=" Value: "+val;
+     return x;
    }
 }
