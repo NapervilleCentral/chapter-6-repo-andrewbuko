@@ -13,17 +13,17 @@ public class Purse
 
     public Purse (Coin acoin)
     {
-        change.add(acoin);
-    }
+            }
   /** precondition: Coin will be initialized (value and name) correctly
   *               each variable will have a value
       postcondition: Puts the Coin into the array list change
   */
     public void add (Coin acoin)
     {
-        if (change.
-        
-        change.add(acoin);
+        if(change.size() == 0)
+            change.add(acoin);
+        else
+            for(i=0; i<change.size() && acoin.getValue() > acoin
     }
 
   /** Returns the total value of the coins in the array
@@ -40,13 +40,13 @@ public class Purse
         return total;
     }
     
-    public double getNumberofPennies()
+    public int getNumberofPennies()
     {
-        double total = 0;
+        int total = 0;
         for (Coin x : change)
         {
             if(x.getName().equals("Penny"))
-                total+=x.getValue();
+                total+=1;
                 
         }    
         return total;
