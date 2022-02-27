@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=CD
+comment1.params=name\ singer\ price\ numTracks
+comment1.target=CD(java.lang.String,\ java.lang.String,\ double,\ int)
+comment2.params=name\ singer\ price\ numTracks\ rate
+comment2.target=CD(java.lang.String,\ java.lang.String,\ double,\ int,\ double)
+comment3.params=
+comment3.target=int\ hashCode()
+comment3.text=\r\n\ \ \ create\ hashCode()\ method\r\n\ \ \ will\ use\ all\ static\ information\ and\ creat\ hashCode\r\n\ \ \ mulitply\ by\ prime\ number\r\n\ \ \ @return\ int\ -\ the\ hash\ Code\r\n\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

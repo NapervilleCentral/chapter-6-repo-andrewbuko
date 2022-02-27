@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Purse
+comment1.params=
+comment1.target=Purse()
+comment2.params=acoin
+comment2.target=void\ add(Coin)
+comment2.text=\ precondition\:\ Coin\ will\ be\ initialized\ (value\ and\ name)\ correctly\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ each\ variable\ will\ have\ a\ value\r\n\ \ \ \ \ \ postcondition\:\ Puts\ the\ Coin\ into\ the\ array\ list\ change\r\n
+comment3.params=acoin
+comment3.target=void\ remove(Coin)
+comment4.params=
+comment4.target=double\ getTotal()
+comment4.text=\ Returns\ the\ total\ value\ of\ the\ coins\ in\ the\ array\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list\ change\r\n\ \ \ \ \ \ \ \ @return\ ???\r\n
+comment5.params=
+comment5.target=int\ getNumberofPennies()
+comment6.params=
+comment6.target=int\ getNumberofNickels()
+comment7.params=
+comment7.target=int\ getNumberofDimes()
+comment8.params=
+comment8.target=int\ getNumberofQuarters()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+comment9.text=\r\n\ \ Returns\ the\ all\ objects\ in\ the\ array\ list\ as\ Strings\r\n
+numComments=10
