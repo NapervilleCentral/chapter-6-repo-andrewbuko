@@ -1,4 +1,9 @@
-
+/**
+ * Andrew Bukowski
+ * 2/27/21
+ * CDCollectionHashTest
+ * Main method to test the CD class
+ */
 public class CDCollectionHashTest
 {
   public static void main(String[] args)
@@ -34,7 +39,7 @@ public class CDCollectionHashTest
     for(int i = 0; i < 18; i++)
     {  
        hashTable[0][i] = ""+(db[i]).hashCode();
-       hashTable[1][i] = db[i].toString();
+       hashTable[1][i] = db[i].toString();//toString contains all the information needed to represent the hash value
     }    
     
     //do not worry about collisions, that is someone elses problem

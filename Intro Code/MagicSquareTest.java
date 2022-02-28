@@ -2,9 +2,14 @@
 // Starter Code for Magic Square
 
 
-import
-//******************************************************************* */
 
+//******************************************************************* */
+/**
+ * Andrew Bukowski
+ * 2-21-22
+ * MagicSquareTest
+ * Class testing the magic square object to see if it's magic or not
+ */
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -13,7 +18,7 @@ import java.util.*;
 
 public class MagicSquareTest
 
-{        final static int MAX = 15;
+{  final static int MAX = 15;
 
       public static void main (String[] args)
    {
