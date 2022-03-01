@@ -33,19 +33,19 @@ public class CDCollectionHashTest
     db[18]=(new CD("Songs about Jane","Maroon 5", 5.99,10,.5));
 
     //create a hash Table (playlist) of appropreate size
-    String[][] hashTable = new String[2][19];
+    CD hashTable[] = new CD[38];
     // place the cd's in the new hash table playlist
     
-    for(int i = 0; i < 18; i++)
+    for(int i = 0; i < 19; i++)
     {  
-       hashTable[0][i] = ""+(db[i]).hashCode();
-       hashTable[1][i] = db[i].toString();//toString contains all the information needed to represent the hash value
+       hashTable[(db[i]).hashCode() % 38 ] = db[i]; // mod 38 is the index of the hashcode
+
     }    
     
     //do not worry about collisions, that is someone elses problem
-    for(int i = 0; i<18; i++)
+    for(int i = 0; i<38; i++)
     {
-        System.out.println(hashTable[0][i]+"\t"+hashTable[1][i]);
+        System.out.println(hashTable[i]);
     }
 
     //displays the entire hash table
