@@ -15,6 +15,7 @@ public class nimm
         int[] nim = {3,5,8};
         boolean p1take = false; boolean p2take = false;
         int winner = 0;
+        //while winner is undecided
         while (winner == 0)
         {
             while(!p1take)

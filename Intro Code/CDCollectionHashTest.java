@@ -13,6 +13,7 @@ public class CDCollectionHashTest
 
     db[0]=(new CD("Summer Teeth","Wilco",13.00,17,5));
     db[1]=(new CD("Sea of Noise","St. Paul and the Broken Bones", 10.99,20,5));
+    //since there was no db 2, I created one
     db[2]=(new CD("Donda","Kanye West", 1.99,27,3.5));
     db[3]=(new CD("Witness", "Benjamin Booker",11.49, 12,5));
     db[4]=(new CD("Strange Desire","Bleachers", 9.00,16,4));

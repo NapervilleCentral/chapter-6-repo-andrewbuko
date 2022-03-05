@@ -14,6 +14,7 @@ public class Client
         //x representing the menu input to do a desired task
         Scanner user = new Scanner(System.in);
         char x = 0;
+        //while the user does not want to exit
         while(x != 'E' && x != 'e')
         {
             //getting user input
